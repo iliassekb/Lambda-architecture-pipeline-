@@ -1,4 +1,15 @@
-## Lambda Architecture Pipeline (Batch + Speed + Serving)
+PS C:\Users\ilias\Desktop\Big Data\Lambda-architecture-pipeline-> Get-Content data/serving/view/merged_view.csv -Head 10
+Get-Content : Cannot find path 'C:\Users\ilias\Desktop\Big 
+Data\Lambda-architecture-pipeline-\data\serving\view\merged_view.csv' because it does not   
+exist.
+At line:1 char:1
++ Get-Content data/serving/view/merged_view.csv -Head 10
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ilias\...merged_view.csv:String) [  
+   Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand  
+
+PS C:\Users\ilias\Desktop\Big Data\Lambda-architecture-pipeline->## Lambda Architecture Pipeline (Batch + Speed + Serving)
 
 This project demonstrates a minimal Lambda Architecture using PySpark:
 - **Batch layer**: processes historical data from `data/batch_input` and writes aggregated results to `data/serving/batch`.
